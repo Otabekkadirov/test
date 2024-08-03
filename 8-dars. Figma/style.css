@@ -15,6 +15,7 @@ body {
 }
 img {
     display: block;
+    width: 100%;
 }
 
 .wrapper {
@@ -129,7 +130,9 @@ header {
 }
 
 /* Popular section */
-
+.popular {
+    margin-bottom: 100px;
+}
 .popular__head {
     display: flex;
     justify-content: space-between;
@@ -184,4 +187,101 @@ header {
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 20px;
+}
+
+/* New products section */
+.new-products {
+}
+.new-products__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+}
+.new-products__slider {
+    display: flex;
+    gap: 14px;
+    position: relative;
+}
+.slider__card {
+}
+.slider__img {
+}
+.slider__info {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.slider__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.slider__price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.slider__card-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.slider__card-button:hover {
+    background-color: #000;
+
+    & .icon {
+        color: white;
+    }
+}
+.slider__card-button:active {
+    scale: 0.96;
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+
+    & .fa-angle-left {
+        left: 0;
+        transform: translateX(-50%);
+    }
+    & .fa-angle-right {
+        right: 0;
+        transform: translateX(50%);
+    }
+    & .arrow {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+        font-size: 24px;
+        background-color: #fff;
+        box-shadow: 0px 2px 2px 0px rgba(222, 222, 222, 0.53);
+        cursor: pointer;
+    }
+    & .arrow:hover {
+        filter: brightness(90%);
+    }
+    & .arrow:active {
+        scale: 0.97;
+    }
 }
