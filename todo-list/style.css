@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.wrapper {
+    max-width: 1024px;
+    width: calc(100vw - 120px);
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #1c8d41;
+    color: #f0f0f0;
+    padding: 30px 0;
+}
+
+.main__wrapper {
+    padding: 30px 0;
+}
+
+.item-lister {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.item-lister__title {
+    margin-bottom: 5px;
+}
+
+.item-lister__form {
+    margin-bottom: 10px;
+}
+
+.form__input {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 5px 15px;
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: 1.2em;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:active {
+    scale: 0.95;
+}
+
+.delete-btn {
+    font-size: 14px;
+    background-color: crimson;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    filter: brightness(120%);
+}
+.delete-btn:active {
+    scale: .97;
+}
+.list-group {
+    list-style: none;
+    font-size: 1.2em;
+    border: 2px solid #aaa;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #aaa;
+    padding: 15px;
+}
+
+.list-group-item:hover {
+    background-color: #1c8d41;
+    color: #f0f0f0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
